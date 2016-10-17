@@ -50,7 +50,9 @@ group :development do
   gem 'capistrano-postgresql', '~> 4.2.0'
   gem 'capistrano3-nginx', '~> 2.0'
 end
-
+group :production do
+  gem 'pg'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

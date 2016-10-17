@@ -3,13 +3,14 @@
 lock '3.6.1'
 
 # Change these
-server 'server', port: 8080, roles: [:web, :app, :db], primary: true
+server '192.168.1.38', password: 'deploy',  roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@example.com:user/app.git'
-set :application,     'appname'
+set :repo_url,        'git@github.com:rocket4ce/deploy-capistrano.git'
+set :application,     'deploy-capistrano'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
+
 
 # Don't change these unless you know what you're doing
 set :pty,             true
