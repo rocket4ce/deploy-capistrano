@@ -22,9 +22,8 @@ test:
 
 production:
   adapter: postgresql
-  encoding: <%= pg_encoding %>
-  database: <%= pg_database %>
-  pool: <%= pg_pool %>
+  encoding: unicode
+  database: deploy
+  pool: 5
   username: postgres
-  password: 'deploy'
-  host: <%= pg_host %>
+  password: deploy
