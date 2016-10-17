@@ -3,7 +3,7 @@
 lock '3.6.1'
 
 # Change these
-server '192.168.1.38', password: 'deploy',  roles: [:web, :app, :db], primary: true
+server '192.168.1.38',  roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:rocket4ce/deploy-capistrano.git'
 set :application,     'deploy-capistrano'
