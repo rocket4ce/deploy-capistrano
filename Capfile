@@ -9,7 +9,6 @@ require 'capistrano/bundler'
 require 'capistrano/rvm'
 require 'capistrano/puma'
 require 'capistrano/postgresql'
-require 'capistrano/nginx'
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:

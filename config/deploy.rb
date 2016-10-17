@@ -28,28 +28,6 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, false  # Change to true if using ActiveRecord
 
-## Configuracino nginx
-
-# Server name for nginx, space separated values
-# No default value
- set :nginx_domains, "localhost"
-
-# Redirected domains, all these will have a permanent redirect to the first of :nginx_domains
-# No default value
-# set :nginx_redirected_domains, "bar.com other.com"
-
-# Socket file that nginx will use as upstream to serve the application
-# Note: Socket upstream has priority over host:port upstreams
-# no default value
-set :app_server_socket, "#{shared_path}/sockets/unicorn-#{fetch :application}.sock"
-
-# The host that nginx will use as upstream to server the application
-# default value: 127.0.0.1
-set :app_server_host, "127.0.0.1"
-
-# The port the application server is running on
-# no default value
-set :app_server_port, 8080
 
 
 ## Defaults:
