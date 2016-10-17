@@ -26,4 +26,4 @@ production:
   database: deploy
   pool: 5
   username: postgres
-  password: deploy
+  password: 'deploy'
